@@ -94,14 +94,13 @@ body {
 }
 
 .ContendorMain {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
 }
 
 .Contenedores {
     width: 100%;
-    margin: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -219,21 +218,17 @@ body {
     }
 
     .ContendorMain {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
-        border: 1px solid black;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     .Contenedores {
-        width: 47%;
-        margin: 1%;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        ;
     }
 }
 
@@ -247,15 +242,12 @@ body {
     }
 
     .ContendorMain {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 
     .Contenedores {
-        width: 29%;
-        margin: 1%;
-        background-color: black;
         overflow: hidden;
         display: flex;
         flex-direction: column;
